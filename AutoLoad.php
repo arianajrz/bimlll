@@ -14,9 +14,9 @@
 		{
 			require_once('Librerias/'.$carga.'.Lib.php');
 		}
-		else if(is_file('Framework/Smarty'.$carga.'.class.php'))
+		else if(is_file('Framework/Smarty/'.$carga.'.class.php'))
         {
-            require_once('Framework/Smarty'.$carga.'.class.php'); 
+            require_once('Framework/Smarty/'.$carga.'.class.php'); 
         }
 		else 
 		{
