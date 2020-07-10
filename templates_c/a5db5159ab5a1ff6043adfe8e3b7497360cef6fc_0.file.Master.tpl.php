@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-10 19:34:46
-  from 'C:\xampp\htdocs\nuevo\bimlll\templates\master.tpl' */
+/* Smarty version 3.1.34-dev-7, created on 2020-07-10 21:02:03
+  from 'C:\xampp\htdocs\nuevo\bimlll\templates\Master.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f08a6b609d639_19119333',
+  'unifunc' => 'content_5f08bb2bcdd158_99996085',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '050577b395b28615eefe9f90cf18216ebe2457ab' => 
+    'a5db5159ab5a1ff6043adfe8e3b7497360cef6fc' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\nuevo\\bimlll\\templates\\master.tpl',
-      1 => 1594399617,
+      0 => 'C:\\xampp\\htdocs\\nuevo\\bimlll\\templates\\Master.tpl',
+      1 => 1594407719,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f08a6b609d639_19119333 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f08bb2bcdd158_99996085 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:Cabeceras/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('titulo'=>'Home'), 0, false);
 ?>
 	<?php if (isset($_smarty_tpl->tpl_vars['e']->value)) {?>
@@ -70,7 +70,7 @@ $_smarty_tpl->_subTemplateRender('file:Cabeceras/header.tpl', $_smarty_tpl->cach
 					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == '') {?>
 
 					<?php } else { ?>
-						<img class="materialboxed " width="100%" src="Recursos/Img/tools.jpg">
+						<i class="large material-icons">touch_app</i>
 					<?php }?>
 
 			</div>

@@ -1,32 +1,25 @@
 <?php
 	Class Usuarios
 	{
-		public function BuscarUsuario()
+		public function BuscarUsuario($u, $pass, $tipo)
 		{
-			//echo "<br/>buscar usuario";
-
+			
 			$user=new Conexion();
-			$q="SELECT * FROM `usuarios` WHERE 1";
+			$q="SELECT * FROM `usuarios` WHERE `usuario`='$u' AND `tipo`='$tipo' AND `password`='$pass';";
 			$resultado=$user->query($q);
-			var_dump($resultado);
+			return $resultado;
+			
+		}
+		
+		public function AgregarUsuario($nom, $ape, $u, $tipo, $pass)
+		{
+			//INSERT INTO `usuario`(`Nombre`, `Apellido`, `Password`, `Tipo`) VALUES ()
 
-			if ($resultado)
-			{
-				if($resultado->num_rows==0)
-				{
-					echo "<br>consulta vacia";
-				}
-				else 
-				{
-					echo "<br>datos en la consulta";
-				}
-			}
-			else
-			{
-				echo "<br>error en la consulta";
-			}
-
-
+			$usuario = new Conexion();
+			$query="INSERT INTO `usuarios`(`nombre`, `apellido`, `usuario`, `tipo`, `password`) VALUES ('$nom','$ape', '$u', '$tipo','$pass');";
+			$consulta=$usuario->query($query);
+			$usuario->close();
+			return $consulta;
 		}
 	}
 ?>

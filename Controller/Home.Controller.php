@@ -9,7 +9,7 @@
 			$smarty->display('master.tpl');
 		}
 
-		public function User()
+		/*public function User()
 		{
 			$user=new Usuarios();
 			$user->BuscarUsuario();
@@ -18,6 +18,6 @@
 			//$class2->Libreria1();
 
 			//$smarty=new Smarty();
-		}
+		}*/
 	}
 ?>
