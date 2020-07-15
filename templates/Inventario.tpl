@@ -11,26 +11,31 @@
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=User&action=Inventario General">
+	<form class = "col s12 center-align" method="post" action="?controller=User&action=InventarioGeneral">
 		<div class = "row">
 			<div class = "input-field col s12">
 				<table border="1">
-					<tr>
-						<td>id</td>
-						<td>Nombre</td>
-						<td>Descrpcion</td>
-						<td>Precio</td>
-						<td>Cantidad</td>
-					</tr>
-					
+					<thead>
 						<tr>
-							<td><?php echo $mostrar['id'] ?></td>
-							<td><?php echo $mostrar['Nombre'] ?></td>
-							<td><?php echo $mostrar['Descricion'] ?></td>
-							<td><?php echo $mostrar['Precio'] ?></td>
-							<td><?php echo $mostrar['Cantidad'] ?></td>
-						</tr> 
+							<td>id</td>
+							<td>Nombre</td>
+							<td>Descripcion</td>
+							<td>Precio</td>
+							<td>Cantidad</td>
+						</tr>
+					</thead>
 					
+					<tbody>
+						{foreach $tabla as $variable}
+							<tr>
+								<td> {$variable['id']} </td>
+								<td> {$variable['Nombre']} </td>
+								<td> {$variable['Descripcion']} </td>
+								<td> {$variable['Precio']} </td>
+								<td> {$variable['Cantidad']} </td>
+							</tr> 
+						{/foreach}
+					</tbody>
 				</table>
 
 			</div>

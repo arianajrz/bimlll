@@ -3,12 +3,16 @@
 	{
 		public function DatosSmarty($consulta)
 		{
-			$ar=$array();
+		  
+         
+			$ar=array();
 
 			while ($row=mysqli_fetch_assoc($consulta))
 			{
+			    
 				array_push($ar,$row);
 			}
+            
 			return $ar;
 		}
 

@@ -23,7 +23,7 @@
 				{else if $vista == "CrearProducto"}
 					{include file='CrearProducto.tpl'}
 					
-				{else if $vista == "Inventario General"}
+				{else if $vista == "InventarioGeneral"}
 					{include file='Inventario.tpl'}
 
 					{else if $vista == ""}
